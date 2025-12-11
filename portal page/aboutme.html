@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Viviers - Portal Page</title>
+    <link rel="stylesheet" href="/portal page/styles/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <div class="banner">
+                <img src="../images/dvavatar.png" alt="Daniel Viviers Avatar" id="avatar">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="/wwr/index.html" target="_blank">WWR</a></li>
+                    <li><a href="/portal page/ice.html">ICE</a></li>
+                    <li><a href="/portal page/aboutme.html">About Me</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="aboutme">
+                <h1>About Me:</h1>
+                <p>My name is Daniel Viviers.
+                    <br>I am a freshman at BYUI and my major is computer science.
+                    <br>Some of my favourite hobbies include: go-karting, rugby, mechanics and learning new things
+                    <br>I served a mission for the Church of Jesus Christ of Latter-Day Saints in Bristol, England.
+                    <br>Lorem ipsum Morbi erat ex, lacinia nec efficitur eget, sagittis ut orci. Etiam in dolor
+                    placerat, pharetra ligula et, bibendum neque. Vestibulum vitae congue lectus, sed ultricies augue.
+                    Nam iaculis elit nec velit luctus, vitae rutrum nunc imperdiet. Nunc vel turpis sit amet lectus
+                    pellentesque tincidunt. Proin commodo tincidunt enim, at sodales mi dictum ac. Maecenas molestie,
+                    metus quis malesuada dictum, leo erat egestas lacus, sit amet tristique urna magna a diam. Donec
+                    ultricies dui sit amet mi ornare egestas. Phasellus ultricies lectus non interdum pellentesque. Cras
+                    nisi tellus, feugiat sed enim quis, tristique interdum lacus. Sed vel pharetra arcu, ac fermentum
+                    neque. Morbi mollis sollicitudin varius. Ut sit amet vulputate velit.
+            </div>
+
+            <div class="slideshow-container">
+
+                <div class="slide fade">
+                    <img src="/images/daniel1.jpg" alt="Image 1">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/images/daniel2.jpg" alt="Image 2">
+                </div>
+
+                <div class="slide fade">
+                    <img src="/images/daniel3.jpg" alt="Image 3">
+                </div>
+
+                <!-- Navigation buttons -->
+                <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+            </div>
+            <br>
+
+            <!-- Dots below slideshow -->
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+
+            </p>
+        </main>
+        <footer>
+            <div class="socials">
+                <a href="https://www.instagram.com/dan.viviers/" target="_blank"><img src="../images/logo-Instagram.png"
+                        alt="Instagram"></a>
+                <a href="https://www.facebook.com/profile.php?id=100008398841389" target="_blank"><img
+                        src="../images/logo-facebook.png" alt="Facebook"></a>
+                <a href="https://www.linkedin.com/in/daniel-viviers-8707a9387/" target="_blank"><img
+                        src="../images/logo-linkedin.png" alt="LinkedIn"></a>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    const slides = document.getElementsByClassName("slide");
+                    const dots = document.getElementsByClassName("dot");
+                    for (let i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (let i = 0; i < dots.length; i++) {
+                        dots[i].classList.remove("active");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].classList.add("active");
+                    setTimeout(showSlides, 4000); // Change image every 4 seconds
+                }
+
+                function changeSlide(n) {
+                    slideIndex += n - 1;
+                    showSlides();
+                }
+
+                function currentSlide(n) {
+                    slideIndex = n - 1;
+                    showSlides();
+                }
+            </script>
+
+            <div class="copyright">
+                <p>© Daniel Viviers</p>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+}
+
+table.paleBlueRows {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid #FFFFFF;
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+table.paleBlueRows td, table.paleBlueRows th {
+  border: 1px solid #FFFFFF;
+  padding: 3px 15px;
+}
+table.paleBlueRows tbody td {
+  font-size: 16px;
+}
+table.paleBlueRows tr:nth-child(even) {
+  background: #D0E4F5;
+}
+table.paleBlueRows thead {
+  background: #0B6FA4;
+  border-bottom: 5px solid #FFFFFF;
+}
+table.paleBlueRows thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #FFFFFF;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+table.paleBlueRows thead th:first-child {
+  border-left: none;
+}
+
+table.paleBlueRows tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #D0E4F5;
+  border-top: 3px solid #444444;
+}
+table.paleBlueRows tfoot td {
+  font-size: 14px;
+}
+table a {
+  text-decoration: none;
+}
+.form {
+  border: 12px solid #00000055;
+  background-color: rgb(169, 198, 250);
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

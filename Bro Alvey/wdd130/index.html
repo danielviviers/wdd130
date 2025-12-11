@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brother Alvey's Portal Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img src="images/logo.png" alt="My logo">
+            <h1>Brother Alvey Portal</h1>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html">WWR</a>
+            <a href="#">ICE</a>
+            <a href="#">Project</a>
+        </nav>
+        <main>
+            <section class="col_left">
+                <img src="images/rafting.png" alt="Rafting Astronauts on Chick Nuggets">
+                <p>Sed aliquip secret sauce hamburger laboris quis.</p>
+            </section>
+            <section class="col_right">
+                <p>Lettuce lorem in charred ut. </p>
+                <img src="images/chickenice.png" alt="Ice Chicken">
+                
+            </section>
+            <section class="col_left">
+                <img src="images/product.png" alt="Astronauts building stuff">
+                <p>Ketchup onion in laboris reprehenderit.</p>
+            </section>
+            <section class="col_right">
+                
+                <a href="aboutme.html">
+                    <p>Hashbrowns honey mustard magna proident 
+                special sauce eiusmod velit juicy.</p>
+                    <img src="images/alveynaut.png" alt="Astronaut Alvey">
+                </a>
+                
+            </section>
+            <section id="ads">
+                <form action="#" method="post" autocomplete="on">
+                    <div>
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first_name" required>
+                    </div>
+
+                    <div>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last_name" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <fieldset>
+                        <legend>Gender</legend>
+                        <label>
+                            <input type="radio" name="gender" value="male" required> Male
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="female"> Female
+                        </label>
+                    </fieldset>
+
+                    <div>
+                        <label for="country">Country</label>
+                        <select id="country" name="country" required>
+                            <option value="" selected disabled>Select your country</option>
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="au">Australia</option>
+                            <option value="de">Germany</option>
+                            <option value="in">India</option>
+                            <option value="jp">Japan</option>
+                        </select>
+                    </div>
+
+                    <fieldset>
+                        <legend>Fantasy Creatures</legend>
+                        <label>
+                            <input type="checkbox" name="creatures[]" value="dragons"> Dragons
+                        </label>
+                        <label>
+                            <input type="checkbox" name="creatures[]" value="elves"> Elves
+                        </label>
+                        <label>
+                            <input type="checkbox" name="creatures[]" value="hobbits"> Hobbits
+                        </label>
+                    </fieldset>
+
+                    <div>
+                        <label for="notes">Notes</label>
+                        <textarea id="notes" name="notes" rows="4" cols="40"
+                            placeholder="Anything else you'd like to add?"></textarea>
+                    </div>
+                    <div></div>
+                    <div>
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+
+
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">WWR</a></li>
+                <li><a href="#">ICE</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+
+            <p>Copyright Alvey 2025 &copy;</p>
+        </footer>
+
+    </div>
+</body>
+
+</html>

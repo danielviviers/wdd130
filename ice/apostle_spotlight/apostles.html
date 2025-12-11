@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        /* Insert styles here */
+        #container {
+            height: 700px;
+            width: 900px;
+            background: url("images/christus.webp") -253px 0px;
+            background-size: cover;
+            border: 10px solid black;
+            border-radius: 20px;
+            background-size: cover;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+        }
+        .councilors {
+            height: 100px;
+            width: 100px;
+            border: 10px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        .councilors img {
+            width: 100px;
+        }
+        .councilors:hover {
+            border-color: rgb(57, 229, 255);
+            transform: scale(1.4);
+        }
+        #prophet {
+            height: 120px;
+            width: 120px;
+            border: 10px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            overflow: hidden;
+        }
+        #prophet img {
+            width: 120px;
+        }
+        #prophet:hover {
+            border-color: rgb(57, 229, 255);
+            transform: scale(1.4);
+        }
+        .presidency-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+        h2 {
+            color: white;
+            text-align: center;
+        }
+        .spotlight {
+            height: 80px;
+            width: 80px;
+            border: 10px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            overflow: hidden;
+            transition: border-color 0.3s ease;
+        }
+        .spotlight img {
+            width: 80px;
+        }
+        .spotlight:hover {
+            border-color: rgb(57, 229, 255);
+            transform: scale(1.4);
+        }
+        .apostle-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+            justify-items: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Insert HTML elements here -->
+    <div id="container">
+        <h1>First Presidency</h1>
+        <div class="presidency-grid">
+            <div class="councilors">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/dallin-h-oaks?lang=eng">
+                <img src="images/oaks.webp" alt="President Oaks"></a>
+            </div>
+            <div id="prophet">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/russell-m-nelson?lang=eng">
+                <img src="images/nelson.webp" alt="President Nelson "></a>
+            </div>
+            <div class="councilors">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/henry-b-eyring?lang=eng" target="_blank">
+                <img src="images/eyring.webp" alt="President Eyering"></a>
+            </div>
+        </div>
+        <h2>Quorum of the Twelve Apostles</h2>
+        <div class="apostle-grid">
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/jeffrey-r-holland?lang=eng" target="_blank">
+                <img src="images/holland.webp" alt="Elder Holland"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/dieter-f-uchtdorf?lang=eng" target="_blank">
+                <img src="images/uchtdorf.webp" alt="Elder Uchtdorf"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/david-a-bednar?lang=eng" target="_blank">
+                <img src="images/bednar.webp" alt="Elder Bednar"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/quentin-l-cook?lang=eng" target="_blank">
+                <img src="images/cook.webp" alt="Elder Cook"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/d-todd-christofferson?lang=eng" target="_blank">
+                <img src="images/christofferson.webp" alt="Elder Christofferson"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/neil-l-andersen?lang=eng" target="_blank">
+                <img src="images/anderson.webp" alt="Elder Anderson"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/ronald-a-rasband?lang=eng" target="_blank">
+                <img src="images/rasband.webp" alt="Elder Rasband"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/gary-e-stevenson?lang=eng" target="_blank">
+                <img src="images/stevenson.webp" alt="Elder Stevenson"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/dale-g-renlund?lang=eng" target="_blank">
+                <img src="images/renlund.webp" alt="Elder Renlund"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/gerrit-w-gong?lang=eng" target="_blank">
+                <img src="images/gong.webp" alt="Elder Gong"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/ulisses-soares?lang=eng" target="_blank">
+                <img src="images/soares.webp" alt="Elder Soares"></a>
+            </div>
+            <div class="spotlight">
+                <a href="https://www.churchofjesuschrist.org/study/general-conference/speakers/patrick-kearon?lang=eng" target="_blank">
+                <img src="images/kearon.webp" alt="Elder Kearon"></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

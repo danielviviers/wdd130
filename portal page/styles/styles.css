@@ -1,0 +1,258 @@
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+#wrapper {
+    width: 800px;
+    max-width: 100%;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: visible;
+    background: url(../../images/banner.png);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center -350px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#avatar {
+    width: 150px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 4px solid rgb(21, 128, 215);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #f9f9f9;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 0rem;
+    margin: -10px 0;
+    padding: 0;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+    background-color: #4c4d52;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+    font-family: 'RedHatDisplay', sans-serif;
+    transition: color 0.3s;
+    padding: 1rem 0;
+    border: 2px solid black;
+}
+
+nav ul li a:hover {
+    color: white;
+    background-color: rgb(21, 128, 215);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #4c4d52;
+    max-width: 800px;
+}
+
+.gallery img {
+    width: 325px;
+    border-radius: 24%;
+    border: 3px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.gallery img:hover {
+    border: solid rgb(21, 128, 215);
+
+}
+
+.socials {
+    display: flex;
+    background-color: #3d3e42;
+    padding: 20px 0px 0px 0px;
+    justify-content: center;
+
+}
+
+.socials img {
+    width: 40px;
+    padding: 0 0.5rem;
+    transition: ease 0.9s;
+
+}
+
+.socials img:hover {
+    transform: scale(1.1);
+}
+
+.copyright {
+    display: flex;
+    background-color: #3d3e42;
+    justify-content: center;
+}
+
+.icegrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    text-align: center;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: larger;
+    font-family: roboto, sans-serif;
+}
+
+.icegrid a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: rgb(21, 128, 215);
+}
+
+.icegrid a:hover {
+    background-color: #dfdfdf;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.icegrid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.icegrid img:hover {
+    transform: scale(1.03);
+}
+
+.aboutme {
+    text-align: center;
+    font-family: roboto, sans-serif;
+}
+
+.slideshow-container {
+  position: relative;
+  max-width: 800px;
+  margin: 40px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.slide {
+  display: none;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 50%;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.prev { left: 15px; }
+.next { right: 15px; }
+
+/* Dots */
+.dots-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fade animation */
+.fade {
+  animation: fadeEffect 1.2s;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0.4 }
+  to { opacity: 1 }
+}
